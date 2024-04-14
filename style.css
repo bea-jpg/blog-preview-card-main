@@ -4,7 +4,7 @@
     --grey: hsl(0, 0%, 50%);
     --black: hsl(0, 0%, 7%);
 
-    --paragraph: 16px;
+    --paragraph: 1rem;
 
     --weight-medium: 500;
     --weight-extrabold: 800;
@@ -15,27 +15,29 @@
     padding: 0;
     margin: 0;
 
-    font-family: "Figtree", sans-serif;
-    font-size: var(--paragraph);
-
-    font-weight: var(--weight-medium);
 }
 
-.container {
-    background-color: var(--yellow);
+body {
+    padding: 1rem;
 
+    font-family: "Figtree", sans-serif;
+    font-size: var(--paragraph);
+    font-weight: var(--weight-medium);
+
+    background-color: var(--yellow);
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    
     min-height: 100vh;
 }
 
 .card {
     background-color: var(--white);
-    width: 360px;
     padding: 25px;
+    max-width: 25rem;
     border-radius: 20px;
 
     border: solid var(--black) 1px;
@@ -53,29 +55,32 @@
     background-color: var(--yellow);
     padding: 8px;
     margin: 25px 0 15px;
-    border-radius: 5px;
-    width: 95px;
+    border-radius: 5px; 
     text-align: center;
     font-weight: var(--weight-extrabold);
+    display: inline-block;
 }
 
-/* .date {
-    font-weight: var(--weight-medium);
-} */
+.date {
+    margin-bottom: 20px;
+}
 
-h1 {
-    font-size: 25px;
+.title {
+    font-size: 1.6rem;
     font-weight: var(--weight-extrabold);
-
+    color: var(--black);
+    text-decoration: none;
     margin: 20px 0;
 }
 
-h1:hover {
+.title:hover {
     color: var(--yellow);
 }
 
 .description {
     color: var(--grey);
+
+    margin-top: 20px;
 }
 
 /* author */
@@ -98,7 +103,7 @@ h1:hover {
 
 /* attribution */
 
-.attribution {
+footer {
     text-align: center;
     margin-top: 40px;
 }
